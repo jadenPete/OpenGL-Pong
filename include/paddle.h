@@ -1,11 +1,11 @@
 #include <GL/gl.h>
 
-#include "bouncer.h"
+#include "pong.h"
 
-#ifndef BOUNCER_PADDLE_H
-#define BOUNCER_PADDLE_H
+#ifndef PONG_PADDLE_H
+#define PONG_PADDLE_H
 
-class Bouncer::Paddle {
+class Pong::Paddle {
 	public:
 		static void draw();
 		static void move();

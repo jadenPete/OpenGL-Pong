@@ -1,11 +1,11 @@
 #include <GL/gl.h>
 
-#include "bouncer.h"
+#include "pong.h"
 
-#ifndef BOUNCER_BALL_H
-#define BOUNCER_BALL_H
+#ifndef PONG_BALL_H
+#define PONG_BALL_H
 
-class Bouncer::Ball {
+class Pong::Ball {
 	public:
 		static void draw();
 		static void move();
@@ -22,7 +22,7 @@ class Bouncer::Ball {
 
 		// interval must be a multiple of GLUT::interval
 		static unsigned long int last_move;
-		static constexpr unsigned int interval = 10;
+		static constexpr unsigned int interval = 20;
 };
 
 #endif

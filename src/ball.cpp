@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <math.h>
 
 #include <GL/gl.h>
@@ -6,15 +7,15 @@
 #include "ball.h"
 #include "paddle.h"
 
-GLfloat Bouncer::Ball::x = -1.0f + Paddle::width;
-GLfloat Bouncer::Ball::y =  1.0f;
+GLfloat Pong::Ball::x = -1.0f + Paddle::width;
+GLfloat Pong::Ball::y =  1.0f;
 
-GLfloat Bouncer::Ball::x_delta =  GLUT::pixel_width * 10;
-GLfloat Bouncer::Ball::y_delta = -GLUT::pixel_width * 10;
+GLfloat Pong::Ball::x_delta =  GLUT::pixel_width * 30;
+GLfloat Pong::Ball::y_delta = -GLUT::pixel_width * 30;
 
-unsigned long int Bouncer::Ball::last_move = 0;
+unsigned long int Pong::Ball::last_move = 0;
 
-void Bouncer::Ball::draw(){
+void Pong::Ball::draw(){
 	glBegin(GL_TRIANGLE_FAN);
 		glVertex2f(x + radius, y - radius);
 
@@ -25,7 +26,7 @@ void Bouncer::Ball::draw(){
 	glEnd();
 }
 
-void Bouncer::Ball::move(){
+void Pong::Ball::move(){
 	GLfloat new_x = x + x_delta;
 	GLfloat new_y = y + y_delta;
 

@@ -2,10 +2,10 @@
 
 #include <math.h>
 
-#ifndef BOUNCER_H
-#define BOUNCER_H
+#ifndef PONG_H
+#define PONG_H
 
-class Bouncer {
+class Pong {
 	public:
 		class GLUT;
 		class Ball;

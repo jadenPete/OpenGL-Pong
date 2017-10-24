@@ -1,11 +1,11 @@
 #include <GL/gl.h>
 
-#include "bouncer.h"
+#include "pong.h"
 
-#ifndef BOUNCER_GLUT_H
-#define BOUNCER_GLUT_H
+#ifndef PONG_GLUT_H
+#define PONG_GLUT_H
 
-class Bouncer::GLUT {
+class Pong::GLUT {
 	public:
 		static void display();
 		static void specialDown(int key, int x, int y);

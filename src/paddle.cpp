@@ -3,12 +3,12 @@
 #include "glut.h"
 #include "paddle.h"
 
-GLfloat Bouncer::Paddle::y = 1.0f;
-GLfloat Bouncer::Paddle::y_delta = GLUT::pixel_width * 10;
+GLfloat Pong::Paddle::y = 1.0f;
+GLfloat Pong::Paddle::y_delta = GLUT::pixel_width * 10;
 
-unsigned long int Bouncer::Paddle::last_move = 0;
+unsigned long int Pong::Paddle::last_move = 0;
 
-void Bouncer::Paddle::draw(){
+void Pong::Paddle::draw(){
 	glBegin(GL_QUADS);
 		glVertex2f(-1.0f + width, y);
 		glVertex2f(-1.0f, y);
@@ -17,7 +17,7 @@ void Bouncer::Paddle::draw(){
 	glEnd();
 }
 
-void Bouncer::Paddle::move(){
+void Pong::Paddle::move(){
 	if(GLUT::key_states[0] && y + y_delta <= 1.0f){
 		y += y_delta;
 	}

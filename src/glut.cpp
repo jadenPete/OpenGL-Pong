@@ -7,10 +7,10 @@
 #include "ball.h"
 #include "paddle.h"
 
-unsigned long int Bouncer::GLUT::exec_time = 0;
-bool Bouncer::GLUT::key_states[2] = {false, false};
+unsigned long int Pong::GLUT::exec_time = 0;
+bool Pong::GLUT::key_states[2] = {false, false};
 
-void Bouncer::GLUT::display(){
+void Pong::GLUT::display(){
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(1.0f, 1.0f, 1.0f);
 
@@ -20,7 +20,7 @@ void Bouncer::GLUT::display(){
 	glutSwapBuffers();
 }
 
-void Bouncer::GLUT::specialDown(int key, int x, int y){
+void Pong::GLUT::specialDown(int key, int x, int y){
 	(void) x;
 	(void) y;
 
@@ -30,7 +30,7 @@ void Bouncer::GLUT::specialDown(int key, int x, int y){
 	}
 }
 
-void Bouncer::GLUT::specialUp(int key, int x, int y){
+void Pong::GLUT::specialUp(int key, int x, int y){
 	(void) x;
 	(void) y;
 
@@ -40,7 +40,7 @@ void Bouncer::GLUT::specialUp(int key, int x, int y){
 	}
 }
 
-void Bouncer::GLUT::timer(int value){
+void Pong::GLUT::timer(int value){
 	(void) value;
 
 	if(exec_time - Ball::last_move >= Ball::interval){
