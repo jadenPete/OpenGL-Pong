@@ -25,7 +25,7 @@ void Pong::Paddle::move(){
 	// Float values are weird and sometimes simply comparing doesn't
 	// work here. So, I put this instead. Even though it goes over at
 	// 7 decimal places in, I only included five, which should take care
-	// of any screen combonation less than 100,000 pixels tall.
+	// of any screen combination less than 100,000 pixels tall.
 	if(GLUT::key_states[1] && -1.0f + height - (y - y_delta) < 0.00001f){
 		y -= y_delta;
 	}
