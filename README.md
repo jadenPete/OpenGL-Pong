@@ -7,6 +7,6 @@ A pong clone written in C++ using OpenGL and GLUT.
 2. Run the build and run scripts (only provided for 64bit systems)
 
 ### Windows
-1. Download the freeglut library and read the info here: http://www.transmissionzero.co.uk/computing/using-glut-with-mingw/
+1. Download the freeglut library and read the info here: http://www.transmissionzero.co.uk/computing/using-glut-with-mingw/. Alternatively, another library can be used here: https://www.cs.csustan.edu/%7ersc/SDSU/GLUTinstall.html
 2. Download mingw for Windows here: https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download
 3. Following the documentation in #1, compile using mingw
