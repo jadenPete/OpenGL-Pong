@@ -10,8 +10,8 @@
 GLfloat Pong::Ball::x = -1.0f + Paddle::width;
 GLfloat Pong::Ball::y =  1.0f;
 
-GLfloat Pong::Ball::x_delta =  GLUT::pixel_width * 30;
-GLfloat Pong::Ball::y_delta = -GLUT::pixel_width * 30;
+GLfloat Pong::Ball::x_delta =  GLUT::pixel_width * 10;
+GLfloat Pong::Ball::y_delta = -GLUT::pixel_width * 10;
 
 unsigned long int Pong::Ball::last_move = 0;
 

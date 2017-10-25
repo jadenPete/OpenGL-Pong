@@ -16,10 +16,10 @@ class Pong::GLUT {
 		static constexpr int window_height = 600;
 		static constexpr const char* window_title = "Pong by Jaden Peterson";
 
-		static constexpr GLfloat pixel_width = 1.0f / window_width / 2.0f;
-		static constexpr GLfloat pixel_height = 1.0f / window_height / 2.0f;
+		static constexpr GLfloat pixel_width = 1.0f / (window_width / 2);
+		static constexpr GLfloat pixel_height = 1.0f / (window_height / 2);
 
-		static constexpr unsigned int interval = 5;
+		static constexpr unsigned int interval = 20;
 		static unsigned long int exec_time;
 		static bool key_states[2];
 };

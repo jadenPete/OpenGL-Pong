@@ -21,6 +21,8 @@ class Pong::Ball {
 		static GLfloat y_delta;
 
 		// interval must be a multiple of GLUT::interval
+		// Try to make interval less than the refresh
+		// rate, e.g. 1,000 / 60 = 17, which means 60fps.
 		static unsigned long int last_move;
 		static constexpr unsigned int interval = 20;
 };

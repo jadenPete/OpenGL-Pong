@@ -5,4 +5,4 @@ g++ -m64 -O3 -std=c++14 -Wall -Wextra -Iinclude -o obj/glut.o -c src/glut.cpp
 g++ -m64 -O3 -std=c++14 -Wall -Wextra -Iinclude -o obj/ball.o -c src/ball.cpp
 g++ -m64 -O3 -std=c++14 -Wall -Wextra -Iinclude -o obj/paddle.o -c src/paddle.cpp
 
-g++ -m64 -lGL -lGLEW -lglut -o bin/bouncer obj/main.o obj/glut.o obj/ball.o obj/paddle.o
+g++ -m64 -lGL -lglut -o bin/pong obj/main.o obj/glut.o obj/ball.o obj/paddle.o
